@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>Carbon Footprint Calculator</title>
+{% endblock %}
+
+{% block body %}
+<div style="width: 100%; display: table; padding-top: 7%;">
+    <div style="display: table-row;">
+        <div id="imgContainer" style="text-align: center;">
+          <img src="static/img/carbon_footprint.jpg" alt="Cover Photo">
+        </div>
+        <div class="container" style="display: table-cell; text-align: center;" >
+        <div >
+          <a href="calculate-carbon-footprint">
+              <button class="btn btn-success" style="margin-bottom: 2%; ">Calculate Your Carbon Footprint</button>
+          </a> <!-- &nbsp;  &nbsp; -->
+          <br>
+          <a href="history">
+              <button class="btn btn-grey" >Show History</button>
+          </a>
+          <br>
+          <a href="suggestion">
+              <button class="btn btn-grey" style="margin-top: 2%; ">Reduce Your Carbon Footprint</button>
+          </a>
+        </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

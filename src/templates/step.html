@@ -1,0 +1,38 @@
+{% extends 'bootstrap/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block content %}
+<div class="container" style="margin-top: 2%; margin-left: 10%">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="progress mb-4">
+                <div class="progress-bar" role="progressbar" style="width: {{ progress }}%" aria-valuenow="{{ progress }}" aria-valuemin="0" aria-valuemax="100">{{ form.title }}: {{ progress }}%</div>
+            </div>
+            <br>
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            <ul class=flashes>
+              {% for message in messages %}
+              <li>{{ message }}</li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+            {% endwith %}
+            <br>
+            <h3>{{ form.title.upper() }}</h3>
+            <hr>
+            {{ wtf.quick_form(form) }}
+            <br>
+            
+            {% if step > 1 %}
+            <a href="{{ url_for('step', step=step-1) }}" class="btn btn-default">Previous</a>
+            {% endif %}
+
+            {% if step == 1 %}
+            <a href="{{ url_for('index') }}" class="btn btn-default">Back</a>
+            {% endif %}
+
+        </div>
+    </div>
+</div>
+{% endblock %}

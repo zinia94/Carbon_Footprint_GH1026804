@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block head %}
+<title>Carbon Footprint Calculator | History</title>
+{% endblock %}
+{% block body %}
+<div style="margin: 2%; margin-top:3%">
+  <div class="logoh1">
+  <img src = "static/img/carbon-footprint_logo.png" alt="logo" style="width:4%">
+  <h2>Your Carbon Footprint History</h2>
+  </div>
+  <br>
+  <br>
+  {% if data|length < 1 %}
+  <div style="text-align: center;">
+  <p>There is no history right now! Please calculate your carbon footprint to get historical data.</p>
+  <a href="calculate-carbon-footprint">
+    <button class="btn btn-success" style="margin-bottom: 2%; ">Calculate Your Carbon Footprint</button>
+   </a>
+  </div>
+  {% else %}
+  <table id="data" class="table table-striped" class="table">
+    <thead class="table-dark">
+      <tr>
+        {% for column in columns %}
+        <th>{{column}}</th>
+        {% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      {% for record in data %}
+        <tr>
+            {% for column in columns %}
+            <td>{{record[column]}}</td>
+            {% endfor %}
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <br>
+  {% endif %}
+  
+  <div style="text-align: right;">
+    {% if data|length > 0 %}
+    <a href="/export" target="_blank">
+      <button class="btn btn-success">Download History</button>
+    </a>
+    {% endif %}
+    <a href="/suggestion" target="_blank">
+      <button class="btn btn-success">Reduce Your Carbon Footprint!</button>
+    </a>
+    <a href="/">
+      <button class="btn btn-default">Back</button>
+    </a>
+  </div>
+</div>
+{% endblock %}
