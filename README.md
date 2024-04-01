@@ -2,6 +2,7 @@
 
 <h2>Project's Title:</h2>
    A python based application to calaculate the carbon footprint of organizations/companies
+
 <h2>Project Description:</h2>
    This application calculates the carbon footprint for three sectors:
    
@@ -20,6 +21,8 @@
    The application has been primarily developed to serve the purpose of learning Python and applying it in practice. To use this application in the real world, more features and improved       accuracy in the calculation of carbon footprint are required.
 
    A demo of the application has been presented in the following link: https://www.youtube.com/watch?v=chLfWDJtjlY
+
+   This project has been developed for the assignment of the course Computer Programming (M602A) in my MEng studies.
 
 <h2>How to Install and Run the Project:</h2>
 
