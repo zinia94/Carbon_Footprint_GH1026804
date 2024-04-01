@@ -31,7 +31,7 @@
    **Step 7:** Run the following command: `python3 db-setup.py`.  
    **Step 8:** Run the following command: `python3 app.py`.  
 
-   The application should now be running using this URL: [http://127.0.0.1:5000](http://127.0.0.1:5000).
+   The application should now be running using this URL: [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
       
    
