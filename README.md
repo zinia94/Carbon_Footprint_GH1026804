@@ -22,7 +22,7 @@
 
    A demo of the application has been presented in the following link: https://www.youtube.com/watch?v=chLfWDJtjlY
 
-   This project has been developed for the assignment of the course Computer Programming (M602A) in my MEng studies.
+   This project has been developed for the assignment of the course **Computer Programming (M602A)** in my MEng studies.
 
 <h2>How to Install and Run the Project:</h2>
 
