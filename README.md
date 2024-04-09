@@ -24,6 +24,10 @@
 
    This project has been developed for the assignment of the course **Computer Programming (M602A)** in my MEng studies.
 
+<h2>Requirements</h2>
+
+Minimum Python version: 3.11.7
+
 <h2>How to Install and Run the Project:</h2>
 
    **Step 1:** Install python3.  
