@@ -59,14 +59,14 @@ columns = ['Record No',
                'Avergae Electricity Bill (euros/month)',
                'Average Gas Bill (euros/month)',
                'Average Fuel Bill (euros/month)',
-               'CO2 Footprint (Energy Usage)',
+               'CO2 Footprint for Energy Usage (kgCO2)',
                'Waste Generated (kg/month)',
                'Waste Recycled (in Percentage)',
-               'CO2 Footprint (Waste) ',
+               'CO2 Footprint for Waste (kgCO2) ',
                'Travel (km/year)',
                'Fuel Efficiency (Liters/100 km)',
-               'CO2 Footprint (Travel)',
-               'Total CO2 Footprint']   
+               'CO2 Footprint For Travel (kgCO2)',
+               'Total CO2 Footprint (kgCO2)']   
 
 def getRecord(energy_usage, waste, travel):
     record = OrderedDict()

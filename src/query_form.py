@@ -28,3 +28,8 @@ class BusinessTravelForm(FlaskForm):
     travelPerYear = FloatField('How many kilometers do your employees travel per year for business purposes?', validators=[InputRequired()])
     fuelEfficiency = FloatField('What is the average fuel efficiency of the vehicles used for business travel in liters per 100 kilometers?', validators=[InputRequired()])
     submit = SubmitField('Next')
+    
+    def validate_fuelEfficiency(form, field):
+        if field.data == 0.00 or field.data <0.00:
+            raise ValidationError("Average Fuel Efficiency can't be equal or below 0.00")
+        
