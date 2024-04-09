@@ -30,7 +30,7 @@ Minimum Python version: 3.11.x
 
 <h2>How to Install and Run the Project:</h2>
 
-   **Step 1:** Install python3. (Minimum version 3.11.x, if the version is < 3.11.x , please upgrade) 
+   **Step 1:** Install python3. (Minimum version 3.11.x, if the version is < 3.11.x , please upgrade)  
    **Step 2:** Run the following command from your terminal where the project is located: `pip3 install virtualenv`.  
    **Step 3:** Run the following command: `virtualenv env`.  
    **Step 4:** For Mac or Linux, run the following command: `source env/bin/activate`. For Windows, run this instead: `env\scripts\activate.bat`.  
