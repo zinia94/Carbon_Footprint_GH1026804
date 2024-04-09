@@ -1,6 +1,6 @@
 
 from collections import OrderedDict
-from datetime import datetime, UTC
+from datetime import datetime
 from typing import List
 
 from flask_sqlalchemy import SQLAlchemy
@@ -12,7 +12,7 @@ db = SQLAlchemy()
 
 class EnergyUsage(db.Model):
     id = db.Column(db.Integer, primary_key = True)
-    date_created = db.Column(db.DateTime, default=datetime.now(UTC))
+    date_created = db.Column(db.DateTime, default=datetime.now())
     avgElectricityBill = db.Column(db.Float, default = 0)
     naturalGasBill = db.Column(db.Float, default = 0)
     avgFuelBill = db.Column(db.Float, default = 0)
@@ -28,7 +28,7 @@ class EnergyUsage(db.Model):
 
 class Waste(db.Model):
     id = db.Column(db.Integer, primary_key = True)
-    date_created = db.Column(db.DateTime, default=datetime.now(UTC))
+    date_created = db.Column(db.DateTime, default=datetime.now())
     wasteGenerated = db.Column(db.Double, default = 0)
     wasteRecycled = db.Column(db.Double, default = 0)
     
